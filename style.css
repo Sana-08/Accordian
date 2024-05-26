@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Poetsen One", sans-serif;
+    color: goldenrod;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.accordion{
+    cursor: pointer;
+}
+
+.main{
+    margin-top: 3rem;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4rem;
+    width: 25rem;
+    border: 1px solid black;
+    margin-top: 1rem;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.2rem;
+    margin-left: 41rem;
+}
+
+.icon{
+    color: goldenrod;
+}
+
+.icon.active{
+    transform: rotate(-180deg);
+}
+
+.answer{
+    border: 1px solid black;
+    width: 25rem;
+    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    margin-left: 41rem;
+}
+
+.answer.active{
+    max-height: fit-content;
+}
